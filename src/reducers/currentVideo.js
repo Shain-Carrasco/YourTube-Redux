@@ -4,14 +4,14 @@ import exampleVideoData from '../data/exampleVideoData.js';
 var currentVideoReducer = (state = null, action) => {
   //TODO: define a reducer for the currentVideo field of our state.
   if (action.type === 'CHANGE_VIDEO') {
-    const newState = action.video;
-    // newState.currentVideo = action.video;
-    // if (state !== null) {
-    //   newState.videoList = [...state.videoList];
-    // } else {
-    //   newState.videoList = null;
+    // let newState = {
+    //   ...state,
+    //   currentVideo: action.video
     // }
-    return newState;
+    // return newState;
+    return Object.assign({}, state, {
+      currentVideo: action.video
+    });
   } else {
     return state;
   }
