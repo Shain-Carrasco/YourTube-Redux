@@ -9,9 +9,10 @@ var currentVideoReducer = (state = null, action) => {
     //   currentVideo: action.video
     // }
     // return newState;
-    return Object.assign({}, state, {
-      currentVideo: action.video
-    });
+    // return Object.assign({}, state, {
+    //   currentVideo: action.video
+    return action.video || null;
+
   } else {
     return state;
   }
