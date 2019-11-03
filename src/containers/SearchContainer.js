@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import Search from './../components/Search.js';
 import handleSearchChange from '../actions/search.js';
 
-var SearchContainer = () => {
-  connect(null, mapDispatchToProps)(Search);
-};
+// var SearchContainer = () => {
+//   connect(null, mapDispatchToProps)(Search);
+// };
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -19,4 +19,4 @@ const mapDispatchToProps = dispatch => {
 
 
 
-export default SearchContainer;
+export default connect(null, mapDispatchToProps)(Search);
