@@ -23,9 +23,9 @@ class Search extends React.Component {
         <input
           className="form-control"
           type="text"
-          value={this.state.value}
+          //value={this.state.value}
           //onChange={this.handleInputChange.bind(this)}
-          onChange={handleSearchInputChange(event.target.value)}
+          onChange={ (event) => this.props.handleSearchInputChange(event.target.value) }
         />
         <button className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>
@@ -34,5 +34,20 @@ class Search extends React.Component {
     );
   }
 }
+
+// var Search = (props) => (
+//   <div className="search-bar form-inline">
+//     <input
+//       className="form-control"
+//       type="text"
+//       //value={this.state.value}
+//       //onChange={this.handleInputChange.bind(this)}
+//       onChange={ (event) => props.handleSearchInputChange(event.target.value) }
+//     />
+//     <button className="btn hidden-sm-down">
+//       <span className="glyphicon glyphicon-search"></span>
+//     </button>
+//   </div>
+// );
 
 export default Search;
