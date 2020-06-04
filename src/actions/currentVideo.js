@@ -6,5 +6,4 @@ var changeVideo = (video) => {
   };
   return action;
 };
-
 export default changeVideo;

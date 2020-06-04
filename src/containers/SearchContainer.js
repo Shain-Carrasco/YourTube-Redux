@@ -17,6 +17,4 @@ const mapDispatchToProps = dispatch => {
 //HINT: use react-redux 'connect' method to generate a container component from
 //state and dispatch mappings.
 
-
-
 export default connect(null, mapDispatchToProps)(Search);

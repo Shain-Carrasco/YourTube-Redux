@@ -10,5 +10,4 @@ import exampleVideoData from '../data/exampleVideoData.js';
 //  videoList:
 //  searchQueryVal:
 //}
-
 export default createStore(rootReducer, {videoList: exampleVideoData, currentVideo: exampleVideoData[0]},applyMiddleware(thunk));

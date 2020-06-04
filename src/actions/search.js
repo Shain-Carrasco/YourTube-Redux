@@ -25,10 +25,4 @@ return a function - Thunk?
     - which invokes dispatch( changeVideo(data.items[0])  )
     - which invokes dispatch( changeVideoList(data.items) )
     -
-
-
-
-
-
-
 */

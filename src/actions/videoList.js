@@ -13,5 +13,4 @@ action:
   type: 'UPDATE VIDEOS',
   payload: videos
 }
-
 */

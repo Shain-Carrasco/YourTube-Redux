@@ -24,4 +24,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(VideoList);;
+export default connect(mapStateToProps, mapDispatchToProps)(VideoList);
